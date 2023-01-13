@@ -7,6 +7,7 @@ import javax.ws.rs.core.MediaType;
 
 import org.apache.camel.builder.RouteBuilder;
 
+@SuppressWarnings("unused")
 public class Route extends RouteBuilder {
   @Override
   public void configure() {
