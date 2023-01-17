@@ -13,6 +13,6 @@ public class Route extends RouteBuilder {
   public void configure() {
     from(platformHttp("/hello").consumes(MediaType.APPLICATION_XML))
         .to(xslt("Transformer.xsl"))
-        .log("${exchangeProperty.%s}".formatted(Exchange.XSLT_WARNING));
+        .log("${exchangeProperty.%s.message}".formatted(Exchange.XSLT_WARNING));
   }
 }
