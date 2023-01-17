@@ -4,11 +4,9 @@
 
     <xsl:template match="/request">
         <xsl:variable name="name" select="//name/text()"/>
-        <xsl:message select = "'Creating response for name = ', $name"/>
+        <xsl:message>Creating response for name = <xsl:value-of select="$name"/></xsl:message>
         <response>
-            <message>
-                <xsl:value-of select="concat('Hello, ', $name)"/>
-            </message>
+            <message>Hello, <xsl:value-of select="$name"/></message>
         </response>
     </xsl:template>
 </xsl:stylesheet>
