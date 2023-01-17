@@ -111,7 +111,7 @@
     </dependency>
     <dependency>
       <groupId>org.apache.camel.quarkus</groupId>
-      <artifactId>camel-quarkus-xslt-saxon</artifactId>
+      <artifactId>camel-quarkus-xslt</artifactId>
     </dependency>
 
     <dependency>
